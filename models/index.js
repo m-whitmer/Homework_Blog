@@ -1,8 +1,3 @@
-const { Sequelize } = require('sequelize');
+const Post = require('./post');
 
-
-// Option 2: Passing parameters separately (other dialects)
-const sequelize = new Sequelize('database', 'username', 'password', {
-    host: 'localhost',
-    dialect: 'mysql'
-  });
+module.exports = { Post };
